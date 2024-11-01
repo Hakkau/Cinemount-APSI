@@ -278,12 +278,12 @@ Partial Class Form1
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.ForeColor = System.Drawing.Color.White
-        Me.TextBox5.Location = New System.Drawing.Point(34, 343)
+        Me.TextBox5.Location = New System.Drawing.Point(46, 343)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(182, 22)
+        Me.TextBox5.Size = New System.Drawing.Size(153, 22)
         Me.TextBox5.TabIndex = 30
-        Me.TextBox5.Text = "2023 ‧ Drama/History ‧ 3 hours"
+        Me.TextBox5.Text = "2023 ‧ Drama/History ‧ 3H"
         '
         'TextBox4
         '
@@ -463,7 +463,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.Brown
         Me.ClientSize = New System.Drawing.Size(1014, 549)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)

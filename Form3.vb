@@ -1,21 +1,18 @@
-﻿Public Class Form3
-    Private Sub Label3_MouseHover(sender As Object, e As EventArgs) Handles Label3.MouseHover
-        ToolTip1.SetToolTip(Label1, "Klik 2 kali untuk memilih jam")
-        ToolTip1.SetToolTip(Label2, "Klik 2 kali untuk memilih jam")
-        ToolTip1.SetToolTip(Label3, "Klik 2 kali untuk memilih jam")
+﻿Imports System.Security.Cryptography.X509Certificates
+
+Public Class Form3
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Dim tiket As New KursiSJ
+        tiket.Show()
+        Me.Close()
+
+        Dim fm1 As New Form1
+        Form1.Hide()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click, Label5.Click
-        Dim time = DirectCast(sender, Label)
-        time.BackColor = Color.White
-    End Sub
-
-    Private Sub Label5_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles Label4.MouseDoubleClick, Label5.MouseDoubleClick
-        Dim time = DirectCast(sender, Label)
-        time.BackColor = Color.Gray
-    End Sub
-
-    Private Sub Label3_MouseClick(sender As Object, e As MouseEventArgs) Handles Label3.MouseClick
-        MessageBox.Show("Silahkan Pilih Jam dan Kursi")
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim back As New Form1
+        Me.Show()
+        Me.Close()
     End Sub
 End Class

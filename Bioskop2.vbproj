@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,11 +88,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin.vb">
+    <Compile Include="FormQR.Designer.vb">
+      <DependentUpon>FormQR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormQR.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="admin.Designer.vb">
-      <DependentUpon>admin.vb</DependentUpon>
+    <Compile Include="FormUser.Designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.vb">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.Designer.vb">
+      <DependentUpon>Loginpage.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
@@ -110,10 +143,37 @@
     <Compile Include="Form5.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="KursiBr.Designer.vb">
+      <DependentUpon>KursiBr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KursiBr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KursiOp.Designer.vb">
+      <DependentUpon>KursiOp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KursiOp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KursiSJ.Designer.vb">
+      <DependentUpon>KursiSJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KursiSJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KursiSM.Designer.vb">
+      <DependentUpon>KursiSM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KursiSM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Module2.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -125,16 +185,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SignUp.Designer.vb">
-      <DependentUpon>SignUp.vb</DependentUpon>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
     </Compile>
-    <Compile Include="SignUp.vb">
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soon.Designer.vb">
+      <DependentUpon>Soon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soon.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="admin.resx">
-      <DependentUpon>admin.vb</DependentUpon>
+    <EmbeddedResource Include="FormQR.resx">
+      <DependentUpon>FormQR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -151,14 +226,29 @@
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KursiBr.resx">
+      <DependentUpon>KursiBr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KursiOp.resx">
+      <DependentUpon>KursiOp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KursiSJ.resx">
+      <DependentUpon>KursiSJ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KursiSM.resx">
+      <DependentUpon>KursiSM.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignUp.resx">
-      <DependentUpon>SignUp.vb</DependentUpon>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soon.resx">
+      <DependentUpon>Soon.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +262,18 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

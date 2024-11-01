@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
@@ -35,8 +35,7 @@ Partial Class Form2
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -121,7 +120,7 @@ Partial Class Form2
         Me.TextBox4.BackColor = System.Drawing.Color.White
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(19, 331)
+        Me.TextBox4.Location = New System.Drawing.Point(19, 343)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(280, 28)
@@ -138,41 +137,32 @@ Partial Class Form2
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(310, 79)
         Me.TextBox5.TabIndex = 14
-        Me.TextBox5.Text = "Cast: Cillian Murphy, Florence Pugh, Ropber Downey Jr, Emily Blunt, Matt Damon, R" &
+        Me.TextBox5.Text = "Cast: Cillian Murphy, Florence Pugh, Robert Downey Jr, Emily Blunt, Matt Damon, R" &
     "ami Malek"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.OrangeRed
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(15, 459)
+        Me.Label3.Location = New System.Drawing.Point(20, 459)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 22)
+        Me.Label3.Size = New System.Drawing.Size(122, 22)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "BUY TICKET"
         '
-        'Label4
+        'LinkLabel1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(19, 492)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(52, 22)
-        Me.Label4.TabIndex = 32
-        Me.Label4.Text = "12:45"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(77, 492)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 22)
-        Me.Label5.TabIndex = 33
-        Me.Label5.Text = "13:10"
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.Brown
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.LinkLabel1.ForeColor = System.Drawing.Color.Black
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Black
+        Me.LinkLabel1.Location = New System.Drawing.Point(478, 47)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(47, 16)
+        Me.LinkLabel1.TabIndex = 30
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "HOME"
         '
         'Form2
         '
@@ -180,8 +170,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(562, 578)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -212,6 +201,5 @@ Partial Class Form2
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

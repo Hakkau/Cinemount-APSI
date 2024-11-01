@@ -34,9 +34,8 @@ Partial Class Form5
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -46,7 +45,7 @@ Partial Class Form5
         Me.TextBox5.BackColor = System.Drawing.Color.White
         Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(19, 374)
+        Me.TextBox5.Location = New System.Drawing.Point(19, 386)
         Me.TextBox5.Multiline = True
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(310, 79)
@@ -59,7 +58,7 @@ Partial Class Form5
         Me.TextBox4.BackColor = System.Drawing.Color.White
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(19, 328)
+        Me.TextBox4.Location = New System.Drawing.Point(19, 340)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(280, 28)
@@ -146,33 +145,25 @@ Partial Class Form5
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.OrangeRed
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(15, 459)
+        Me.Label4.Location = New System.Drawing.Point(20, 459)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(117, 22)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "BUY TICKET"
         '
-        'Label5
+        'LinkLabel1
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(77, 492)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 22)
-        Me.Label5.TabIndex = 37
-        Me.Label5.Text = "13:10"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(19, 492)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(52, 22)
-        Me.Label3.TabIndex = 36
-        Me.Label3.Text = "12:45"
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.Brown
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.DarkGoldenrod
+        Me.LinkLabel1.ForeColor = System.Drawing.Color.Black
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Black
+        Me.LinkLabel1.Location = New System.Drawing.Point(478, 47)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(47, 16)
+        Me.LinkLabel1.TabIndex = 32
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "HOME"
         '
         'Form5
         '
@@ -180,8 +171,7 @@ Partial Class Form5
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(562, 578)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.TextBox4)
@@ -211,7 +201,6 @@ Partial Class Form5
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
